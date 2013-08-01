@@ -1,0 +1,210 @@
+package com.cnarj.ttxs.pojo.shop;
+
+import com.cnarj.ttxs.pojo.sys.Admin;
+
+import java.util.Date;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User:liz
+ * Date: 13-7-22
+ * Time: A.M.9:51
+ * 购物车运费模板
+ */
+public class FeeTemplate {
+    private String id;
+    private String templateName;        //模板名称
+    private String province;            //省份
+
+    private Double firstPrice;          //首价格
+    private Double continuePrice;        //续价格
+
+    private Double firstWeight;          //首重量
+    private Double continueWeight;      //续重量
+
+    private String firstWeightUnit;      //首重单位
+    private String continueWeightUnit;  //续重单位
+
+    private Integer freePrice;//是否免运费,1表示不免运费。。。。0 表示免运费
+    private Double price; //运费
+
+    private Double overWeight;//超过重量
+    private Double overWeightUnit;//超重单位
+    private Double overWeightPrice;//超重价格
+
+    private Admin admin;
+    private Admin lastModifyAdmin;
+    private Date createTime;
+    private Date lastModifyTime;
+
+    public FeeTemplate() {
+    }
+
+    public FeeTemplate(String id, String templateName, String province, Double firstPrice, Double continuePrice,
+                       Double firstWeight, Double continueWeight, String firstWeightUnit, String continueWeightUnit,
+                       Integer freePrice, Double price, Double overWeight, Double overWeightUnit, Double overWeightPrice,
+                       Admin admin, Admin lastModifyAdmin, Date createTime, Date lastModifyTime) {
+        this.id = id;
+        templateName = templateName;
+        this.province = province;
+        this.firstPrice = firstPrice;
+        this.continuePrice = continuePrice;
+        this.firstWeight = firstWeight;
+        this.continueWeight = continueWeight;
+        this.firstWeightUnit = firstWeightUnit;
+        this.continueWeightUnit = continueWeightUnit;
+        this.freePrice = freePrice;
+        this.price = price;
+        this.overWeight = overWeight;
+        this.overWeightUnit = overWeightUnit;
+        this.overWeightPrice = overWeightPrice;
+        this.admin = admin;
+        this.lastModifyAdmin = lastModifyAdmin;
+        this.createTime = createTime;
+        this.lastModifyTime = lastModifyTime;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getTemplateName() {
+        return templateName;
+    }
+
+    public void setTemplateName(String templateName) {
+        this.templateName = templateName;
+    }
+
+    public String getProvince() {
+        return province;
+    }
+
+    public void setProvince(String province) {
+        this.province = province;
+    }
+
+    public Double getFirstPrice() {
+        return firstPrice;
+    }
+
+    public void setFirstPrice(Double firstPrice) {
+        this.firstPrice = firstPrice;
+    }
+
+    public Double getContinuePrice() {
+        return continuePrice;
+    }
+
+    public void setContinuePrice(Double continuePrice) {
+        this.continuePrice = continuePrice;
+    }
+
+    public Double getFirstWeight() {
+        return firstWeight;
+    }
+
+    public void setFirstWeight(Double firstWeight) {
+        this.firstWeight = firstWeight;
+    }
+
+    public Double getContinueWeight() {
+        return continueWeight;
+    }
+
+    public void setContinueWeight(Double continueWeight) {
+        this.continueWeight = continueWeight;
+    }
+
+    public String getFirstWeightUnit() {
+        return firstWeightUnit;
+    }
+
+    public void setFirstWeightUnit(String firstWeightUnit) {
+        this.firstWeightUnit = firstWeightUnit;
+    }
+
+    public String getContinueWeightUnit() {
+        return continueWeightUnit;
+    }
+
+    public void setContinueWeightUnit(String continueWeightUnit) {
+        this.continueWeightUnit = continueWeightUnit;
+    }
+
+    public Integer getFreePrice() {
+        return freePrice;
+    }
+
+    public void setFreePrice(Integer freePrice) {
+        this.freePrice = freePrice;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
+
+    public Double getOverWeight() {
+        return overWeight;
+    }
+
+    public void setOverWeight(Double overWeight) {
+        this.overWeight = overWeight;
+    }
+
+    public Double getOverWeightUnit() {
+        return overWeightUnit;
+    }
+
+    public void setOverWeightUnit(Double overWeightUnit) {
+        this.overWeightUnit = overWeightUnit;
+    }
+
+    public Double getOverWeightPrice() {
+        return overWeightPrice;
+    }
+
+    public void setOverWeightPrice(Double overWeightPrice) {
+        this.overWeightPrice = overWeightPrice;
+    }
+
+    public Admin getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(Admin admin) {
+        this.admin = admin;
+    }
+
+    public Admin getLastModifyAdmin() {
+        return lastModifyAdmin;
+    }
+
+    public void setLastModifyAdmin(Admin lastModifyAdmin) {
+        this.lastModifyAdmin = lastModifyAdmin;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getLastModifyTime() {
+        return lastModifyTime;
+    }
+
+    public void setLastModifyTime(Date lastModifyTime) {
+        this.lastModifyTime = lastModifyTime;
+    }
+}
