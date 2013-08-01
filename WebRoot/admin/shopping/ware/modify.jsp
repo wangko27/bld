@@ -129,8 +129,8 @@
                                 <td style="text-align: right">重量单位:</td>
                                 <td>
                                 		<select name="goods.weightunit" id="gWu">
-                                				<option value="1" ${goods.weightunit eq "1" ? 'selected':''} > 克</option>
-                                				<option value="2" ${goods.weightunit eq "2" ? 'selected':''}>千克</option>
+                                				<option value="g" ${goods.weightunit eq "g" ? 'selected':''} > 克</option>
+                                				<option value="kg" ${goods.weightunit eq "kg" ? 'selected':''}>千克</option>
                                 		</select>
                                 </td>
                             </tr>

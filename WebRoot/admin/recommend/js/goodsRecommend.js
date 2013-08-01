@@ -12,22 +12,22 @@ $(function(){
         $("#recommendAreaId").hide(10);
     }
 
-//单选框按钮
-$("#miaoSha :radio").click(function(){
-    var value =   $("input[name=ms]:checked").val()
-//                alert("value="+value)
-    if(value == 0){
-        $("#miaoShaDate").hide(10);
-        $("#miaoPrice").hide(10)
-        $("#recommendAreaId").show(10);
-    }else if(value == 1){
-        $("#miaoShaDate").show(10);
-        $("#miaoPrice").show(10)
-        $("#recommendAreaId").hide(10);
-    }
-});
+    //单选框按钮
+    $("#miaoSha :radio").click(function(){
+        var value =   $("input[name=ms]:checked").val()
+    //                alert("value="+value)
+        if(value == 0){
+            $("#miaoShaDate").hide(10);
+            $("#miaoPrice").hide(10)
+            $("#recommendAreaId").show(10);
+        }else if(value == 1){
+            $("#miaoShaDate").show(10);
+            $("#miaoPrice").show(10)
+            $("#recommendAreaId").hide(10);
+        }
+    });
 
-//表单提交按钮
+    //表单提交按钮
     $('#tjBut').click(function(){
         var flag = false;
         var goodsname=$("#goodsname").val();

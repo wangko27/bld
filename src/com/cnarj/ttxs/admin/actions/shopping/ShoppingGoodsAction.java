@@ -174,23 +174,6 @@ public class ShoppingGoodsAction extends PageAction {
         brandService.save(brand);
         goods.setBrand(brand);
 
-       //保存上传的图片在WebRoot根目录下
-//		System.out.println("addGoods  is running...,picFileName="+picFileName);
-//		String imageFileName = new Date().getTime() + getExtention(picFileName);
-//        System.out.println("addGoods  is running...,imageFileName="+imageFileName);
-//		try {
-//			File imageFile = new File(ServletActionContext.getServletContext().getRealPath( "uploadfiles/shopping/UploadImages") , imageFileName);
-//			if(!imageFile.getParentFile().exists()) imageFile.getParentFile().mkdirs();
-//			FileUtils.copyFile(pic, imageFile);
-//		} catch (RuntimeException e) {
-//			this.setAttribute("chonggong", "添加失败!");
-//			e.printStackTrace();
-//			return "add";
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-//		goods.setPhotospath("uploadfiles/shopping/UploadImages/"+imageFileName);
-
         //保存上传的图片在服务器指定目录下
         //获取配置文件里面的服务器图片目录
         List<String> imagePaths = new ArrayList<String>();
